@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درباره ما</title>
+    <link rel="stylesheet" href="/static/about_us.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/Fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    {% include 'includes/search_box.html' %}
+    <header class="about-us-header-bg">
+        {% include 'includes/navbar.html' %}
+        <div class="clear-fix"></div>
+        <div class="content">
+            <h3 class="mb-5">جلوتر بمان</h3>
+            <p class="mb-5">
+                ما محصولات نرم افزاری را برای دسکتاپ، وب، موبایل و
+                دستگاه های متصل طراحی و می سازیم
+                و برای برتری در اجرا ارزش قائل هستیم و راه حل های نرم افزاری پیچیده را به مشاغل در سراسر
+                جهان
+                ارائه می دهیم
+            </p>
+            <p>
+                ماموریت ما کمک به کسب‌وکارها برای ساختن آینده و رشد بیشتر به شرکت‌های برجسته، با استفاده از فناوری‌های
+                پیشرفته و بهترین شیوه‌ها در توسعه نرم‌افزار است.
+            </p>
+        </div>
+        <div></div>
+        <div class="clear-fix"></div>
+    </header>
+
+    <div class="about-us-content">
+        <div class="vision-content">
+            <article>
+                <h3 class="mb-5">
+                    دیدگاه ما
+                </h3>
+                <p class="mb-5">
+                    ما دنیایی را تصور می کنیم که در آن همه جنبه های زندگی ما با محصولات نرم افزاری درجه یک، از راه حل
+                    های کاربردی اینترنت اشیا گرفته تا برنامه های موبایل مؤثر و ابزارهای آنلاین ارزشمند، بهبود می یابد.
+                </p>
+                <p class="mb-5">
+                    ما از اعتراف به این که توسط کلیشه صنعت تبدیل شدن جهان به مکانی بهتر، یک راه حل نرم افزاری در یک زمان
+                    هدایت می شویم، ابایی نداریم.
+                </p>
+                <p class="mb-5">
+                    ما با پشتکار نقش خود را در تحقق این چشم انداز ایفا می کنیم، چه با توسعه پروژه های داخلی یا کار برای
+                    مشتریان خود، تا ایده های آنها را به واقعیت تبدیل کنیم.
+                </p>
+            </article>
+            <img alt="content-vision" src="/static/images/content-vision.jpg">
+        </div>
+
+
+    </div>
+
+    {% include 'includes/footer.html' %}
+</body>
+
+</html>

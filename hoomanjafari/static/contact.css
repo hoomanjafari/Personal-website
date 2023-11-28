@@ -1,0 +1,38 @@
+@import "/static/css.css";
+
+.contact-form {
+    width: calc(100% / 2.6);
+    margin: 0 auto;
+}
+.contact-app {
+    background-image: url("/static/images/contact-bg.jpg");
+    background-size: cover;
+}
+.contact-content {
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+.contact-content h3 {
+    margin: 4vw 0 6vw 0;
+    color: white;
+}
+.contact-form button {
+    font-size: 2vw;
+}
+
+@media (max-width: 767.98px) {
+    .contact-content h3 {
+        margin: 0;
+        padding: 33vw 0 ;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 3vw;
+    }
+    .contact-form button {
+        font-size: 6vw;
+        padding: 1vw 6vw;
+}
+
+}

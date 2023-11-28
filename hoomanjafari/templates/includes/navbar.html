@@ -1,0 +1,79 @@
+<div class="clear-fix"></div>
+<nav class="nav-responsive-fixed" id="nav-responsive-fixed">
+    <ul class="nav-responsive" id="menu">
+        <li class="nav-responsive-icon"><a class="nav-link" href="{% url 'home:home' %}">صفحه نخست</a></li>
+        <li class="nav-responsive-icon"><a class="nav-link" href="{% url 'article:article' %}">مقالات</a></li>
+        <li class="nav-responsive-icon"><a class="nav-link" href="{% url 'about-us:about_us' %}">درباره ما</a></li>
+        <li class="nav-responsive-icon"><a class="nav-link" href="{% url 'cv:cv_page' %}"> نمونه کار ها</a></li>
+    </ul>
+    <button onclick="HiddenMenu()"></button>
+    <div class="clear-fix"></div>
+</nav>
+
+<div class="clear-fix"></div>
+<nav class="nav-btn-burger">
+    <button class="burger-btn" onclick="ShowMenu()"><i class="fa fa-bars fa-2x"></i></button>
+</nav>
+<div class="clear-fix"></div>
+
+<nav class="nav-style position-relative">
+    <div class="clear-fix"></div>
+    <div class="nav-left">
+        <ul>
+            <li class="nav-icon"><a class="nav-link text-info" href="{% url 'home:home' %}"><i class="fa fa-home"></i></a></li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <ul>
+            <li class="nav-icon"><a class="nav-link" href="{% url 'article:article' %}">مقالات</a></li>
+            <li class="nav-icon"><a class="nav-link" href="{% url 'cv:cv_page' %}"> نمونه کار ها</a></li>
+            <li class="nav-icon"><a class="nav-link" href="{% url 'about-us:about_us' %}">درباره ما</a></li>
+            <li class="nav-icon"><button onclick="SearchBox()" class="btn"><i class="fs-3 search-icon fa fa-search"></i></button></li>
+        </ul>
+    </div>
+    <div class="clear-fix"></div>
+</nav>
+
+
+<nav class="nav-style-fixed" id="navbar">
+    <div class="nav-left">
+        <ul>
+            <li class="nav-icon"><a class="nav-link text-info" href="{% url 'home:home' %}"><i class="fa fa-home"></i></a></li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <ul>
+            <li class="nav-icon"><a class="nav-link" href="{% url 'article:article' %}">مقالات</a></li>
+            <li class="nav-icon"><a class="nav-link" href="{% url 'cv:cv_page' %}"> نمونه کار ها</a></li>
+            <li class="nav-icon"><a class="nav-link" href="{% url 'about-us:about_us' %}">درباره ما</a></li>
+            <li class="nav-icon"><button onclick="SearchBox()" class="btn"><i class="fs-3 search-icon fa fa-search"></i></button></li>
+        </ul>
+    </div>
+</nav>
+<script>
+    function ShowMenu() {
+        document.getElementById("menu").style.width = "calc(100% / 2)"
+        document.getElementById("nav-responsive-fixed").style.visibility = "visible"
+    }
+
+    function HiddenMenu() {
+        document.getElementById("menu").style.width = "0"
+        document.getElementById("nav-responsive-fixed").style.visibility = "hidden"
+    }
+
+    window.onscroll = function() {scrollFunction()};
+    {#window.onscroll = scrollFunction#}
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 360 || document.documentElement.scrollTop > 360) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-90px";
+      }
+    }
+
+    function SearchBox() {
+        document.querySelector('.search-box').style.display = 'block'
+    }
+
+</script>
